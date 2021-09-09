@@ -120,8 +120,8 @@ class ActivatorModel(models.Model):
         (ACTIVE_STATUS, _('Active')),
     )
     status = models.IntegerField(_('status'), choices=STATUS_CHOICES, default=ACTIVE_STATUS)
-    activate_date = models.DateTimeField(blank=True, null=True, help_text=_('keep empty for an immediate activation'))
-    deactivate_date = models.DateTimeField(blank=True, null=True, help_text=_('keep empty for indefinite activation'))
+    activate_date = models.DateTimeField(_("activate date"), blank=True, null=True, help_text=_('keep empty for an immediate activation'))
+    deactivate_date = models.DateTimeField(_("deactivate date"), blank=True, null=True, help_text=_('keep empty for indefinite activation'))
     objects = ActivatorModelManager()
 
     class Meta:

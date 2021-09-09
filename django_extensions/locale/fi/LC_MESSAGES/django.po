@@ -72,6 +72,14 @@ msgstr "Aktiivinen"
 msgid "status"
 msgstr "tila"
 
+#: db/models.py:125
+msgid "activate date"
+msgstr "aktivointipäivä"
+
+#: db/models.py:126
+msgid "deactivate date"
+msgstr "deaktivointipäivä"
+
 #: db/models.py:125 mongodb/models.py:80
 msgid "keep empty for an immediate activation"
 msgstr "pidä tyhjänä aktivoidaksesi välittömästi"
